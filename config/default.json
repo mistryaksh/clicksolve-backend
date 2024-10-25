@@ -1,0 +1,9 @@
+{
+  "JWT_SECRET": "JSONWEBTOKENSECRET",
+  "DB_PATH": "mongodb+srv://admin:gaJU7veFvrHXfwJG@cluster0.0hz6q0t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+  "JWT_EXPIRE": "3d",
+  "TWILIO_USERNAME": "AC841fae347d311d5f382cce30048a342a",
+  "TWILIO_PASSWORD": "db488c206382fefd34d30fb411217bf4",
+  "TWILIO_SID": "VAc77a1813dd9158b81c52b9ccc10c7e85",
+  "TWILIO_TOKEN": "910c94f488f61ff97fc01867dcb0585f"
+}
