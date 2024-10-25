@@ -31,7 +31,6 @@ class App {
     this.express.use(
       cors({
         origin: "*",
-        credentials: true,
       })
     );
     this.express.use(cookieParser());
