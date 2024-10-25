@@ -5,7 +5,6 @@ import { Ok, UnAuthorized } from "utils";
 import jwt from "jsonwebtoken";
 import { User } from "model";
 import { LoginRequired } from "middleware";
-import config from "config";
 
 export class UserAuthController implements IController {
   public routes: IControllerRoutes[] = [];

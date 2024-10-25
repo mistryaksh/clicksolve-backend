@@ -1,12 +1,14 @@
 import bodyParser from "body-parser";
 import express, { Express } from "express";
 import mongoose from "mongoose";
-import config from "config";
 import cors from "cors";
 import morgan from "morgan";
 import { errorHandler, notFoundMiddleware } from "./middleware";
 import { registerRoutesV1 } from "api";
 import cookieParser from "cookie-parser";
+import { configDotenv } from "dotenv";
+
+configDotenv();
 
 class App {
   express: Express;
@@ -50,7 +52,7 @@ class App {
 
   private async connectDb() {
     try {
-      await mongoose.connect(process.env.DB_PATH || config.get("DB_PATH"));
+      await mongoose.connect(process.env.DB_PATH);
       console.log("database connected");
     } catch (err) {
       return console.log(err);
