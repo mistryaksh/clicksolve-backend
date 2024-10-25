@@ -89,7 +89,7 @@ export class UserAuthController implements IController {
         return Ok(res, `otp has been sent to ${mobile}`);
       }
     } catch (err) {
-      console.log(err);
+      console.log("ERROR", err);
       return UnAuthorized(res, err);
     }
   }
